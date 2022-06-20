@@ -120,6 +120,12 @@ body {
 }
 
 .services {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.4rem;
+}
+
+.services div {
+  background-color: #3d3f46;
+  height: 10rem;
 }

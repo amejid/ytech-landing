@@ -59,7 +59,6 @@ body {
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
-  border-radius: 9px;
   color: #ec5242;
   border: 0.5rem solid #ec5242;
 }
@@ -96,7 +95,7 @@ body {
 
 .section-services {
   background-color: #272a31;
-  color: #d3d3d3;
+  color: #fff;
 }
 
 .section-services .container {
@@ -109,7 +108,6 @@ body {
 }
 
 .section-services .heading-secondary {
-  color: #d3d3d3;
   padding-top: 4.8rem;
   text-align: center;
   margin-bottom: 1.2rem;
@@ -153,7 +151,7 @@ body {
 }
 
 .section-team {
-  padding-bottom: 6.4rem;
+  padding-bottom: 8rem;
 }
 
 .section-team .heading-secondary {
@@ -189,9 +187,9 @@ body {
 }
 
 .member-content {
+  padding-top: 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 0.8rem;
 }
 
@@ -213,4 +211,15 @@ body {
 .member-desc {
   font-size: 1.4rem;
   line-height: 1.2;
+}
+
+.section-clients {
+  background-color: #3d3f46;
+  color: #d3d3d3;
+}
+
+.section-clients .heading-secondary {
+  padding-top: 4.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
 }

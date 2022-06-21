@@ -1,5 +1,8 @@
 const teamEl = document.querySelector('.team');
 const servicesEl = document.querySelector('.services');
+const yearEl = document.querySelector('.year');
+
+yearEl.textContent = new Date().getFullYear();
 
 const teamInfo = [
   {
@@ -79,8 +82,7 @@ const servicesInfo = [
   },
   {
     name: 'Websites',
-    description: `Listen to the speakers from various countries about the messages of sharing and
-    opening`,
+    description: 'We are the leading website design and development company in Ethiopia',
     iconClasses: 'fa-solid fa-code fa-4x',
   },
 ];

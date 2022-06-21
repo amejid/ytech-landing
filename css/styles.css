@@ -152,6 +152,10 @@ body {
   text-align: center;
 }
 
+.section-team {
+  padding-bottom: 6.4rem;
+}
+
 .section-team .heading-secondary {
   color: #272a31;
   padding-top: 4.8rem;
@@ -162,7 +166,8 @@ body {
 .team {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.4rem;
+  column-gap: 2.4rem;
+  row-gap: 6.4rem;
 }
 
 .member {
@@ -188,4 +193,24 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 0.8rem;
+}
+
+.member-name {
+  font-size: 2.4rem;
+}
+
+.member-job {
+  font-size: 1.4rem;
+  color: #ec5242;
+}
+
+.indicator {
+  width: 2.4rem;
+  height: 0.1rem;
+  background-color: #d3d3d3;
+}
+
+.member-desc {
+  font-size: 1.4rem;
+  line-height: 1.2;
 }

@@ -31,7 +31,7 @@ body {
 }
 
 .logo {
-  height: 4.8rem;
+  height: 6.4rem;
 }
 
 .main-nav-list {
@@ -175,7 +175,7 @@ body {
 }
 
 .member-img-container {
-  background-image: url(../imgs/board.jpg);
+  background-image: url(../imgs/board-gray.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: top left;
@@ -216,10 +216,21 @@ body {
 .section-clients {
   background-color: #3d3f46;
   color: #d3d3d3;
+  padding-bottom: 6.4rem;
 }
 
 .section-clients .heading-secondary {
   padding-top: 4.8rem;
   text-align: center;
   margin-bottom: 1.2rem;
+}
+
+.clients {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.client-logo {
+  height: 3.2rem;
 }

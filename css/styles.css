@@ -234,3 +234,27 @@ body {
 .client-logo {
   height: 3.2rem;
 }
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 4.8rem;
+  padding: 6.4rem 0;
+}
+
+.footer-img {
+  width: 80%;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.copyright,
+.footer-desc {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}

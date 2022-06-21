@@ -11,7 +11,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: '../imgs/1.png',
+    imageUrl: ['../imgs/1.png', 'Photo of Sarah'],
   },
   {
     name: 'Naol Kidanu',
@@ -19,7 +19,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: '../imgs/2.png',
+    imageUrl: ['../imgs/2.png', 'Photo of Naol'],
   },
   {
     name: 'Fozia Abako',
@@ -27,7 +27,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: '../imgs/3.png',
+    imageUrl: ['../imgs/3.png', 'Photo of Fozia'],
   },
   {
     name: 'Feben Negussie',
@@ -35,7 +35,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: '../imgs/4.png',
+    imageUrl: ['../imgs/4.png', 'Photo of Feben'],
   },
   {
     name: 'Mohammed Hussen',
@@ -43,7 +43,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: '../imgs/5.png',
+    imageUrl: ['../imgs/5.png', 'Photo of Mohammed'],
   },
   {
     name: 'Abdu Nurye',
@@ -51,7 +51,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: '../imgs/6.png',
+    imageUrl: ['../imgs/6.png', 'Photo of Abdu'],
   },
 ];
 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let builder = '';
     builder = `
       <div class="member-img-container">
-        <img class="member-img" src="${member.imageUrl}" alt="" />
+        <img class="member-img" src="${member.imageUrl[0]}" alt="${member.imageUrl[1]}" />
       </div>
       <div class="member-content">
         <h4 class="member-name">${member.name}</h4>

@@ -1,5 +1,6 @@
 const teamEl = document.querySelector('.team');
 const servicesEl = document.querySelector('.services');
+const clientsEl = document.querySelector('.clients');
 const yearEl = document.querySelector('.year');
 
 yearEl.textContent = new Date().getFullYear();
@@ -87,6 +88,29 @@ const servicesInfo = [
   },
 ];
 
+const clientsInfo = [
+  {
+    link: 'https://www.netflix.com',
+    imgUrl: ['imgs/netflix.svg', 'Netflix logo'],
+  },
+  {
+    link: 'https://www.google.com',
+    imgUrl: ['imgs/google.svg', 'Google logo'],
+  },
+  {
+    link: 'https://www.cocacola.com',
+    imgUrl: ['imgs/cocacola.svg', 'CocaCola logo'],
+  },
+  {
+    link: 'https://www.microsoft.com',
+    imgUrl: ['imgs/microsoft.svg', 'Microsoft logo'],
+  },
+  {
+    link: 'https://www.paypal.com',
+    imgUrl: ['imgs/paypal.svg', 'PayPal logo'],
+  },
+];
+
 document.addEventListener('DOMContentLoaded', () => {
   teamInfo.forEach((member) => {
     let builder = '';
@@ -110,13 +134,26 @@ document.addEventListener('DOMContentLoaded', () => {
   servicesInfo.forEach((service) => {
     let builder = '';
     builder = `
-        <i class="${service.iconClasses}"></i>
-        <h3 class="service-title">${service.name}</h3>
-        <p class="service-desc">${service.description}</p>`;
+      <i class="${service.iconClasses}"></i>
+      <h3 class="service-title">${service.name}</h3>
+      <p class="service-desc">${service.description}</p>`;
 
     const serviceEl = document.createElement('div');
     serviceEl.innerHTML = builder;
     serviceEl.classList.add('service');
     servicesEl.appendChild(serviceEl);
+  });
+
+  clientsInfo.forEach((client) => {
+    let builder = '';
+    builder = `
+      <a href="${client.link}">
+        <img class="client-logo" src="${client.imgUrl[0]}" alt="${client.imgUrl[1]}"/>
+      </a>`;
+
+    const clientEl = document.createElement('li');
+    clientEl.innerHTML = builder;
+    clientEl.classList.add('client');
+    clientsEl.appendChild(clientEl);
   });
 });

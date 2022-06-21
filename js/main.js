@@ -1,4 +1,5 @@
 const teamEl = document.querySelector('.team');
+const servicesEl = document.querySelector('.services');
 
 const teamInfo = [
   {
@@ -51,6 +52,39 @@ const teamInfo = [
   },
 ];
 
+const servicesInfo = [
+  {
+    name: 'Mobile Apps',
+    description: `Listen to the speakers from various countries about the messages of sharing and
+    opening`,
+    iconClasses: 'fa-solid fa-mobile fa-4x',
+  },
+  {
+    name: 'Tech Support',
+    description: `Listen to the speakers from various countries about the messages of sharing and
+    opening`,
+    iconClasses: 'fa-solid fa-headset fa-4x',
+  },
+  {
+    name: 'UI Design',
+    description: `Listen to the speakers from various countries about the messages of sharing and
+    opening`,
+    iconClasses: 'fa-solid fa-circle-notch fa-4x',
+  },
+  {
+    name: 'E-Commerce',
+    description: `Listen to the speakers from various countries about the messages of sharing and
+    opening`,
+    iconClasses: 'fa-solid fa-cart-shopping fa-4x',
+  },
+  {
+    name: 'Websites',
+    description: `Listen to the speakers from various countries about the messages of sharing and
+    opening`,
+    iconClasses: 'fa-solid fa-code fa-4x',
+  },
+];
+
 document.addEventListener('DOMContentLoaded', () => {
   teamInfo.forEach((member) => {
     let builder = '';
@@ -69,5 +103,18 @@ document.addEventListener('DOMContentLoaded', () => {
     memberEl.innerHTML = builder;
     memberEl.classList.add('member');
     teamEl.appendChild(memberEl);
+  });
+
+  servicesInfo.forEach((service) => {
+    let builder = '';
+    builder = `
+        <i class="${service.iconClasses}"></i>
+        <h3 class="service-title">${service.name}</h3>
+        <p class="service-desc">${service.description}</p>`;
+
+    const serviceEl = document.createElement('div');
+    serviceEl.innerHTML = builder;
+    serviceEl.classList.add('service');
+    servicesEl.appendChild(serviceEl);
   });
 });

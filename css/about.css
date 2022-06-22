@@ -41,15 +41,18 @@
   .hero-subtitle {
     display: none;
   }
+
   .hero-title,
   .hero-desc {
     width: 70%;
     margin: 0 auto;
     text-align: center;
   }
+
   .hero-title {
     margin-bottom: 9.6rem;
   }
+
   .section-clients {
     display: none;
   }

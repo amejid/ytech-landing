@@ -1,12 +1,6 @@
 const teamEl = document.querySelector('.team');
 const servicesEl = document.querySelector('.services');
 const clientsEl = document.querySelector('.clients');
-const yearEl = document.querySelector('.year');
-const headerEl = document.querySelector('.header');
-const btnOpenEl = document.querySelector('.icon-open');
-const btnCloseEl = document.querySelector('.icon-close');
-
-yearEl.textContent = new Date().getFullYear();
 
 const teamInfo = [
   {
@@ -159,14 +153,4 @@ document.addEventListener('DOMContentLoaded', () => {
     clientEl.classList.add('client');
     clientsEl.appendChild(clientEl);
   });
-});
-
-btnOpenEl.addEventListener('click', () => {
-  headerEl.classList.add('nav-open');
-  document.body.style.overflow = 'hidden';
-});
-
-btnCloseEl.addEventListener('click', () => {
-  headerEl.classList.remove('nav-open');
-  document.body.style.overflow = 'scroll';
 });

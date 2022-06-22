@@ -23,8 +23,10 @@ body {
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   padding: 0 1.2rem;
   display: flex;
+  z-index: 99;
   justify-content: space-between;
   height: 8rem;
 }
@@ -119,7 +121,6 @@ body {
 
 .hero-title,
 .hero-subtitle {
-  width: 90%;
   background: url(../imgs/red-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -200,7 +201,6 @@ body {
 
 .service-desc {
   font-size: 1.6rem;
-  text-align: center;
 }
 
 .section-team {
@@ -334,7 +334,6 @@ body {
     left: 0;
     padding: 0 9.6rem;
     max-width: 100%;
-    z-index: 99;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -400,6 +399,10 @@ body {
     padding: 2.4rem;
     align-items: center;
     gap: 2.4rem;
+  }
+
+  .service-desc {
+    text-align: center;
   }
 
   .team {

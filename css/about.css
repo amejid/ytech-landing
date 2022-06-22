@@ -1,0 +1,73 @@
+.hero-title,
+.hero-subtitle,
+.hero-desc {
+  text-align: center;
+}
+
+.section-trademark {
+  padding-bottom: 4.8rem;
+}
+
+.section-trademark .heading-secondary {
+  padding-top: 4.8rem;
+  text-align: center;
+}
+
+.section-trademark .partition {
+  margin-bottom: 1.2rem;
+}
+
+.trademark-desc {
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.trademark-img {
+  margin: 2.4rem;
+  border: 1px solid #d3d3d3;
+  padding: 1.2rem 3.6rem;
+}
+
+.trademark-img img {
+  width: 100%;
+}
+
+@media (min-width: 48em) {
+  .section-hero {
+    /* background-image: url(../imgs/bg-dektop-about.png); */
+  }
+
+  .hero-subtitle {
+    display: none;
+  }
+  .hero-title,
+  .hero-desc {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-title {
+    margin-bottom: 9.6rem;
+  }
+  .section-clients {
+    display: none;
+  }
+
+  .trademark-desc {
+    margin-bottom: 8rem;
+  }
+
+  .trademark-img {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    background-color: #3d3f46;
+  }
+
+  .footer-text {
+    color: #fff;
+  }
+}

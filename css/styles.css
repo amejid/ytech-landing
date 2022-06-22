@@ -433,7 +433,15 @@ body {
     display: block;
   }
 
+  .view-more {
+    display: none;
+  }
+
   .hidden {
     display: block;
+  }
+
+  .member.hidden {
+    display: grid;
   }
 }

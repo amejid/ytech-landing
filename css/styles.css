@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #272a31;
+  position: relative;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 1.2rem;
+  z-index: 99;
+  justify-content: space-between;
+  height: 8rem;
+}
+
+.logo {
+  height: 6.4rem;
+  display: none;
+}
+
+.main-nav {
+  display: none;
+}
+
+.nav-open .main-nav {
+  display: block;
+  width: 80vw;
+  height: 100vh;
+  position: absolute;
+  padding-left: 1.2rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(229, 229, 229, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+.nav-open .main-nav-list {
+  list-style: none;
+  gap: 3.2rem;
+  padding-top: 1.2rem;
+  flex-direction: column;
+}
+
+.icon-close {
+  display: none;
+}
+
+.nav-open .icon-close {
+  display: block;
+}
+
+.nav-open .icon-open {
+  display: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #272a31;
+  font-weight: 500;
+  font-size: 2.4rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ec5242;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  color: #ec5242;
+  border: 0.5rem solid #ec5242;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #f6a9a1;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #272a31;
+}
+
+.section-hero {
+  background-image: url(../imgs/bg-mobile.png);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 1.2rem 0 1.2rem;
+}
+
+.hero-title,
+.hero-subtitle {
+  background: url(../imgs/red-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  margin-bottom: 3.6rem;
+}
+
+.hero-subtitle {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.hero-desc {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  background-color: #fafafa;
+  border: 1px solid #fff;
+}
+
+.section-services {
+  background-color: #272a31;
+  color: #fff;
+}
+
+.section-services .container {
+  padding-bottom: 18rem;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+}
+
+.section-services .heading-secondary {
+  padding-top: 4.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.partition {
+  width: 8rem;
+  height: 0.2rem;
+  margin: 0 auto;
+  margin-bottom: 4.8rem;
+  background-color: #ec5242;
+}
+
+.services {
+  grid-template-columns: 1fr;
+  gap: 0.4rem;
+}
+
+.services div {
+  background-color: #3d3f46;
+}
+
+.service {
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+}
+
+.service-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #ec5242;
+}
+
+.service-desc {
+  font-size: 1.6rem;
+}
+
+.section-team {
+  padding-bottom: 8rem;
+}
+
+.section-team .heading-secondary {
+  color: #272a31;
+  padding-top: 4.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.team {
+  padding: 0 1.2rem;
+  grid-template-columns: 1fr;
+  column-gap: 2.4rem;
+  row-gap: 6.4rem;
+}
+
+.member {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3.2rem;
+}
+
+.member-img-container {
+  background-image: url(../imgs/board-gray.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top left;
+}
+
+.member-img {
+  width: 100%;
+  transform: translate(1.5rem, 1.5rem);
+}
+
+.member-content {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.member-name {
+  font-size: 2.4rem;
+}
+
+.member-job {
+  font-size: 1.4rem;
+  color: #ec5242;
+}
+
+.indicator {
+  width: 2.4rem;
+  height: 0.1rem;
+  background-color: #d3d3d3;
+}
+
+.member-desc {
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.section-clients {
+  background-color: #3d3f46;
+  color: #d3d3d3;
+  padding-bottom: 6.4rem;
+}
+
+.section-clients .heading-secondary {
+  padding-top: 4.8rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.clients {
+  list-style: none;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.client-logo {
+  height: 3.2rem;
+}
+
+.footer-content {
+  color: #64656b;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 4.8rem;
+  padding: 6.4rem 0;
+}
+
+.footer-img {
+  width: 80%;
+}
+
+.footer-text {
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.footer-desc {
+  display: none;
+}
+
+.copyright,
+.footer-desc {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.hidden {
+  display: none;
+}
+
+.view-more {
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.btn-more {
+  border: 1px solid #d3d3d3;
+  background: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+}
+
+@media (min-width: 48em) {
+  .container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 9.6rem;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .nav-open {
+    display: none;
+  }
+
+  .main-nav-list {
+    list-style: none;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.8rem;
+  }
+
+  .icon-open {
+    display: none;
+  }
+
+  .section-hero {
+    background-image: url(../imgs/bg-desktop.png);
+    height: 100vh;
+    margin-top: 8rem;
+  }
+
+  .hero-title {
+    font-size: 6.4rem;
+    width: 70%;
+  }
+
+  .hero-subtitle {
+    font-size: 3.6rem;
+  }
+
+  .hero-desc {
+    width: 50%;
+  }
+
+  .services {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .service-desc {
+    text-align: center;
+  }
+
+  .team {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-desc {
+    display: block;
+  }
+
+  .view-more {
+    display: none;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .member.hidden {
+    display: grid;
+  }
+}

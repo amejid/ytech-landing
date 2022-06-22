@@ -1,6 +1,5 @@
 const teamEl = document.querySelector('.team');
 const servicesEl = document.querySelector('.services');
-const hiddenEl = document.querySelectorAll('.hidden');
 const viewMoreEl = document.querySelector('.view-more');
 const btnMoreEl = document.querySelector('.btn-more');
 
@@ -88,7 +87,7 @@ const servicesInfo = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-  teamInfo.forEach((member) => {
+  teamInfo.forEach((member, index) => {
     let builder = '';
     builder = `
       <div class="member-img-container">
@@ -104,6 +103,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const memberEl = document.createElement('div');
     memberEl.innerHTML = builder;
     memberEl.classList.add('member');
+    if (index > 1) {
+      memberEl.classList.add('hidden');
+    }
     teamEl.appendChild(memberEl);
   });
 
@@ -119,6 +121,11 @@ document.addEventListener('DOMContentLoaded', () => {
     serviceEl.classList.add('service');
     servicesEl.appendChild(serviceEl);
   });
+});
+
+let hiddenEl;
+document.addEventListener('DOMContentLoaded', () => {
+  hiddenEl = document.querySelectorAll('.hidden');
 });
 
 btnMoreEl.addEventListener('click', () => {

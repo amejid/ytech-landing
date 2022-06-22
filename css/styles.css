@@ -13,31 +13,60 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #272a31;
+  position: relative;
 }
 
 .container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  padding: 0 1.2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 8rem;
-  position: relative;
 }
 
 .logo {
   height: 6.4rem;
+  display: none;
 }
 
-.main-nav-list {
-  list-style: none;
+.main-nav {
+  display: none;
+}
+
+.nav-open .main-nav {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  padding-left: 4.8rem;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.nav-open .main-nav-list {
   display: flex;
-  align-items: center;
-  gap: 4.8rem;
+  list-style: none;
+  gap: 3.2rem;
+  padding-top: 2.4rem;
+  flex-direction: column;
+}
+
+.icon-close {
+  display: none;
+}
+
+.nav-open .icon-close {
+  display: block;
+}
+
+.nav-open .icon-open {
+  display: none;
 }
 
 .main-nav-link:link,
@@ -46,7 +75,7 @@ body {
   text-decoration: none;
   color: #272a31;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 3rem;
   transition: all 0.3s;
 }
 
@@ -71,7 +100,6 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-  display: none;
 }
 
 .icon-mobile-nav {
@@ -80,15 +108,12 @@ body {
   color: #272a31;
 }
 
-.icon-mobile-nav .icon-close {
-  display: none;
-}
-
 .section-hero {
-  background-image: url(../imgs/bg-desktop.png);
-  height: 100vh;
+  background-image: url(../imgs/bg-mobile.png);
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 8rem;
 }
 
 .section-services {
@@ -121,7 +146,7 @@ body {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.4rem;
 }
 
@@ -131,10 +156,8 @@ body {
 
 .service {
   padding: 2.4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
 }
 
 .service-title {
@@ -161,7 +184,8 @@ body {
 
 .team {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 0 1.2rem;
+  grid-template-columns: 1fr;
   column-gap: 2.4rem;
   row-gap: 6.4rem;
 }
@@ -226,7 +250,10 @@ body {
 .clients {
   list-style: none;
   display: flex;
+  gap: 2.4rem;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 .client-logo {
@@ -234,6 +261,7 @@ body {
 }
 
 .footer-content {
+  color: #64656b;
   display: grid;
   grid-template-columns: 1fr 2.5fr;
   gap: 4.8rem;
@@ -251,8 +279,89 @@ body {
   gap: 2.4rem;
 }
 
+.footer-desc {
+  display: none;
+}
+
 .copyright,
 .footer-desc {
   font-size: 1.8rem;
   line-height: 1.2;
+}
+
+@media (min-width: 48em) {
+  .container {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 9.6rem;
+    max-width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .nav-open {
+    display: none;
+  }
+
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 1.8rem;
+  }
+
+  .icon-open {
+    display: none;
+  }
+
+  .section-hero {
+    background-image: url(../imgs/bg-desktop.png);
+    height: 100vh;
+    margin-top: 8rem;
+  }
+
+  .services {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .team {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-desc {
+    display: block;
+  }
 }

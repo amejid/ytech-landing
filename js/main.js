@@ -1,5 +1,8 @@
 const teamEl = document.querySelector('.team');
 const servicesEl = document.querySelector('.services');
+const hiddenEl = document.querySelectorAll('.hidden');
+const viewMoreEl = document.querySelector('.view-more');
+const btnMoreEl = document.querySelector('.btn-more');
 
 const teamInfo = [
   {
@@ -116,4 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
     serviceEl.classList.add('service');
     servicesEl.appendChild(serviceEl);
   });
+});
+
+btnMoreEl.addEventListener('click', () => {
+  hiddenEl.forEach((element) => {
+    element.classList.remove('hidden');
+  });
+
+  viewMoreEl.style.display = 'none';
 });

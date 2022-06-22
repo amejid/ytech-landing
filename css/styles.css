@@ -114,7 +114,38 @@ body {
   height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 8rem;
+  padding: 8rem 1.2rem 0 1.2rem;
+}
+
+.hero-title,
+.hero-subtitle {
+  width: 90%;
+  background: url(../imgs/red-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  margin-bottom: 3.6rem;
+}
+
+.hero-subtitle {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+.hero-desc {
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  background-color: #fafafa;
+  border: 1px solid #fff;
 }
 
 .section-services {
@@ -344,6 +375,19 @@ body {
     background-image: url(../imgs/bg-desktop.png);
     height: 100vh;
     margin-top: 8rem;
+  }
+
+  .hero-title {
+    font-size: 6.4rem;
+    width: 70%;
+  }
+
+  .hero-subtitle {
+    font-size: 3.6rem;
+  }
+
+  .hero-desc {
+    width: 50%;
   }
 
   .services {

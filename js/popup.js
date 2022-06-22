@@ -19,23 +19,23 @@ btnCloseEl.addEventListener('click', () => {
 const clientsInfo = [
   {
     link: 'https://www.netflix.com',
-    imgUrl: ['../imgs/netflix.svg', 'Netflix logo'],
+    imgUrl: ['./imgs/netflix.svg', 'Netflix logo'],
   },
   {
     link: 'https://www.google.com',
-    imgUrl: ['../imgs/google.svg', 'Google logo'],
+    imgUrl: ['./imgs/google.svg', 'Google logo'],
   },
   {
     link: 'https://www.cocacola.com',
-    imgUrl: ['../imgs/cocacola.svg', 'CocaCola logo'],
+    imgUrl: ['./imgs/cocacola.svg', 'CocaCola logo'],
   },
   {
     link: 'https://www.microsoft.com',
-    imgUrl: ['../imgs/microsoft.svg', 'Microsoft logo'],
+    imgUrl: ['./imgs/microsoft.svg', 'Microsoft logo'],
   },
   {
     link: 'https://www.paypal.com',
-    imgUrl: ['../imgs/paypal.svg', 'PayPal logo'],
+    imgUrl: ['./imgs/paypal.svg', 'PayPal logo'],
   },
 ];
 

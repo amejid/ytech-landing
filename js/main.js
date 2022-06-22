@@ -10,7 +10,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: ['../imgs/1.png', 'Photo of Sarah'],
+    imageUrl: ['imgs/1.png', 'Photo of Sarah'],
   },
   {
     name: 'Naol Kidanu',
@@ -18,7 +18,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: ['../imgs/2.png', 'Photo of Naol'],
+    imageUrl: ['imgs/2.png', 'Photo of Naol'],
   },
   {
     name: 'Fozia Abako',
@@ -26,7 +26,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: ['../imgs/3.png', 'Photo of Fozia'],
+    imageUrl: ['imgs/3.png', 'Photo of Fozia'],
   },
   {
     name: 'Feben Negussie',
@@ -34,7 +34,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: ['../imgs/4.png', 'Photo of Feben'],
+    imageUrl: ['imgs/4.png', 'Photo of Feben'],
   },
   {
     name: 'Mohammed Hussen',
@@ -42,7 +42,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: ['../imgs/5.png', 'Photo of Mohammed'],
+    imageUrl: ['imgs/5.png', 'Photo of Mohammed'],
   },
   {
     name: 'Abdu Nurye',
@@ -50,7 +50,7 @@ const teamInfo = [
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam cupiditate ex esse
     sapiente. Distinctio quae adipisci ipsum sed nihil iste tenetur, minus laboriosam,
     quos animi eligendi eos, dignissimos perferendis nesciunt?`,
-    imageUrl: ['../imgs/6.png', 'Photo of Abdu'],
+    imageUrl: ['imgs/6.png', 'Photo of Abdu'],
   },
 ];
 

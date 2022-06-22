@@ -22,7 +22,10 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-You can clone the repository using the link https://github.com/amejid/capstone-1
+- Clone the repository using the link https://github.com/amejid/capstone-1
+- Navigate to the folder using <cd capstone-1>
+- Open index.html in the browser of your choice
+- Use your favorite text editor to modify contents of the page
 
 ## Authors
 
@@ -45,6 +48,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse curriculum
-- Cindy Shien on behance
+- [Cindy Shien](https://www.behance.net/adagio07) the author of the original [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) used to develop this project
 
 ## 📝 License

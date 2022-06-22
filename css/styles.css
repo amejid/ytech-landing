@@ -321,6 +321,26 @@ body {
   line-height: 1.2;
 }
 
+.hidden {
+  display: none;
+}
+
+.view-more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.btn-more {
+  border: 1px solid #d3d3d3;
+  background: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+}
+
 @media (min-width: 48em) {
   .container {
     max-width: 120rem;
@@ -410,6 +430,10 @@ body {
   }
 
   .footer-desc {
+    display: block;
+  }
+
+  .hidden {
     display: block;
   }
 }

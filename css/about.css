@@ -34,10 +34,6 @@
 }
 
 @media (min-width: 48em) {
-  .section-hero {
-    /* background-image: url(../imgs/bg-dektop-about.png); */
-  }
-
   .hero-subtitle {
     display: none;
   }

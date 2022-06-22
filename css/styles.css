@@ -20,12 +20,19 @@ body {
   max-width: 100%;
 }
 
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   padding: 0 1.2rem;
-  display: flex;
   z-index: 99;
   justify-content: space-between;
   height: 8rem;
@@ -53,7 +60,6 @@ body {
 }
 
 .nav-open .main-nav-list {
-  display: flex;
   list-style: none;
   gap: 3.2rem;
   padding-top: 1.2rem;
@@ -178,7 +184,6 @@ body {
 }
 
 .services {
-  display: grid;
   grid-template-columns: 1fr;
   gap: 0.4rem;
 }
@@ -215,7 +220,6 @@ body {
 }
 
 .team {
-  display: grid;
   padding: 0 1.2rem;
   grid-template-columns: 1fr;
   column-gap: 2.4rem;
@@ -281,7 +285,6 @@ body {
 
 .clients {
   list-style: none;
-  display: flex;
   gap: 2.4rem;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -294,7 +297,6 @@ body {
 
 .footer-content {
   color: #64656b;
-  display: grid;
   grid-template-columns: 1fr 2.5fr;
   gap: 4.8rem;
   padding: 6.4rem 0;
@@ -305,7 +307,6 @@ body {
 }
 
 .footer-text {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2.4rem;
@@ -326,7 +327,6 @@ body {
 }
 
 .view-more {
-  display: flex;
   justify-content: center;
   margin-bottom: 2.4rem;
 }
@@ -354,7 +354,6 @@ body {
     left: 0;
     padding: 0 9.6rem;
     max-width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8rem;
@@ -376,7 +375,6 @@ body {
 
   .main-nav-list {
     list-style: none;
-    display: flex;
     align-items: center;
     gap: 4.8rem;
   }

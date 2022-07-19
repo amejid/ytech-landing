@@ -8,7 +8,7 @@ A website built for a local tech startup
 
 ## Live Demo
 
-You can checkout the live version [here](https://amejid.github.io/capstone-1/)
+You can checkout the live version [here](https://amejid.github.io/ytech-landing/)
 
 ## Getting Started
 
@@ -22,8 +22,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Clone the repository using the link https://github.com/amejid/capstone-1
-- Navigate to the folder using `cd capstone-1`
+- Clone the repository using the link https://github.com/amejid/ytech-landing
+- Navigate to the folder using `cd ytech-landing`
 - Open index.html in the browser of your choice
 - Use your favorite text editor to modify contents of the page
 
